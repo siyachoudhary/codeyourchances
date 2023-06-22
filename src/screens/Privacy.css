@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.heading{
+    font-family: 'Secular One', sans-serif;
+    font-size: 7vh;
+    color: #639BCB;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    /* padding-bottom: 3vh; */
+    /* border-bottom: 2px solid #F38C1C; */
+}
+
+.details{
+    color: #393939;
+    font-size: 2vh;
+    text-align: left;
+    height: fit-content;
+    font-weight: 200;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.privacyItem{
+    display: flex;
+    margin-left: 45vh;
+    margin-right: 45vh;
+}
+
+.mainNum{
+    font-size: 5vh;
+    color: #F38C1C;
+    margin-right: 2vh;
+    font-weight: 900;
+}
+
+.subNum{
+    font-size: 3vh;
+    color: #639BCB;
+    margin-right: 2vh;
+    font-weight: 900;
+    margin-left: 3vh;
+}
+
+.lastItem{
+    margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 991px) {
+
+    .privacyItem{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+}

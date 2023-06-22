@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Secular+One&display=swap');
+
+#mainHome{
+    background: url("../../public/images/cover1.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30vh;
+    padding-bottom: 25vh;
+    color: white;
+    -webkit-filter: grayscale(.8);
+}
+
+.headingMain{
+    font-size: 15vh;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 1vh;
+}
+
+.headingSecondary{
+    font-size: 5vh;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 1vh;
+}   
+
+.heading2{
+    font-size: 5vh;
+    font-family: 'Secular One', sans-serif;
+    color: #639BCB;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    letter-spacing: .2rem;
+}
+
+.newsLogo{
+    margin: 3vh;
+    transition: all .3s ease-in-out;
+}
+
+.newsLogo:hover{
+    opacity: .5;
+    scale: 1.1;
+}
+
+.small{
+    width: 40vh;
+}
+
+.big{
+    height: 25vh;
+}
+
+.last{
+    margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 991px) {
+    #mainHome{
+        background: url("../../public/images/cover2.jpeg") no-repeat;
+        background-size: cover;
+        height: 100vh;
+        padding-top: 15vh;
+    }
+
+    .headingMain{
+        font-size: 8vh;
+        text-align: left;
+        margin: 3vh;
+    }
+
+
+    .headingSecondary{
+        font-size: 3vh;
+        text-align: left;
+        margin: 3vh;
+    }   
+}

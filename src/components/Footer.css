@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&family=Secular+One&display=swap');
+
+.myFooter{
+    background-color: rgb(189, 189, 189);
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-bottom: 5vh;
+    padding-top: 5vh; */
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 100;
+}
+
+.bottom{
+    background-color: rgb(29, 31, 32, .7);
+    height: auto;
+    display: flex;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    justify-content: left;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.footerText{
+    font-size: 2.5vh;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footerTextMain{
+    font-size: 2vh;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.footerText2{
+    font-size: 2vh;
+    color: #ffffff;
+    transition: .5s ease-in-out;
+}
+
+.footerText2:hover{
+    color: #639BCB;
+}
+
+.data{
+    width: 100%;
+    padding: 5vh;   
+}
+
+.socials{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.socials a{
+    color: #ffffff;
+    margin: 2vh;
+}
+
+.insta:hover{
+    color: #ff269d;
+    opacity: .5;
+}
+
+.facebook:hover{
+    color: #283fed;
+    opacity: .5;
+}
+
+.email:hover{
+    color: #ff2626;
+    opacity: .5;
+}
+
+.logo{
+    height: 25vh;
+}
+
+.icons{
+    height: 5vh;
+    transition: .5s ease-in-out;
+}
+
+.guideStar{
+    width: 20vh;
+    height: 20vh;
+}
+
+.Shadowed{
+    width: 10vh;
+    height: 10vh;
+}
+
+.cycEmail{
+    padding-bottom: .5vh;
+}
+
+
+@media screen and (max-width: 991px) {
+    .bottom{
+        justify-content: center;
+    }
+
+    .myFooter{
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        padding-top: 3vh;
+    }
+
+    .data1{
+        text-align: center;
+    }
+
+    .data{
+        width: 100%;
+        padding-top: 0vh;
+        padding-bottom: 2vh;
+    }
+
+    .guideStar{
+        height: 15vh;
+    }
+
+    .logo{
+        height: 10vh;
+    }
+    
+    .footerText{
+        font-size: 1.8vh;
+    }
+
+    .footerText2{
+        font-size: 1.75vh;
+    }
+
+    .footerTextMain{
+        font-size: 1.5vh;
+    }
+
+    .socials{
+        margin: 1vh;
+    }
+
+    .cycEmail{
+        padding-bottom: .1vh;
+    }
+    
+}

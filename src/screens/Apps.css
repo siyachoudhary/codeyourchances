@@ -1,0 +1,89 @@
+.mainApps{
+    background-color: #639BCB;
+    height: 30vh;
+    padding-top: 15vh;
+    padding-bottom:15vh;
+    color: white;
+}
+
+.mainPara{
+    font-size: 2vh;
+    margin-bottom: 4vh;
+}
+
+.mainInfo{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.appTitle{
+    font-size: 3vh;
+    margin-left: 0;
+}
+
+.mobileApp{
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+.mobileApp img{
+    width: 100%;
+}
+
+.mobileAppAbout{
+    text-align: left;
+    width: 75%;
+    margin-right: 3vh;
+}
+
+.mobileAppImg{
+    width: 50%;
+    filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.2));
+}
+
+.mobileAppImg2{
+    width: 50%;
+}
+
+.computerGame{
+    margin-bottom: 5vh;
+}
+
+.vrImages{
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 991px) {
+    .mainInfo{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-bottom: 7vh;
+        margin-top: 2vh;
+    }
+
+    .mainPara{
+        font-size: 16px;
+        margin-bottom: 4vh;
+    }
+
+    .mobileApp{
+        display: inline-block;
+    }
+
+    .mobileAppImg{
+        margin: 5%;
+        width: 90%;
+    }
+
+    .mobileAppAbout{
+        text-align: center;
+        margin-right: 0vh;
+        width: 100%;
+    }
+
+    .mobileAppImg2{
+        width: 100%;
+    }
+}
