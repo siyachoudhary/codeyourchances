@@ -3,41 +3,12 @@ import "./AllPages.css"
 import "./Projects.css"
 import AOS from 'aos'
 import "aos/dist/aos.css"
-
-const chicago = ["/images/chicagoWorkshop/chicago1.jpg", "/images/chicagoWorkshop/chicago2.jpg", "/images/chicagoWorkshop/chicago3.jpg", "/images/chicagoWorkshop/chicago4.JPG"];
-const uk = ["/images/ukWorkshop/uk1.JPG", "/images/ukWorkshop/uk2.JPG", "/images/ukWorkshop/uk3.JPG", "/images/ukWorkshop/uk4.JPG"];
-const india = ["/images/indiaWorkshop/india1.jpeg", "/images/indiaWorkshop/india2.jpeg", "/images/indiaWorkshop/india3.jpeg", "/images/indiaWorkshop/india4.jpeg"];
-
-const delay = 2500;
+import Carousel from 'react-bootstrap/Carousel';
 
 export const Projects = () => {
   useEffect(()=>{
     AOS.init({duration: 500, easing:"ease-in-out"});
   }, []);
-
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
-
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
-
-  React.useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === chicago.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
 
   return (
 
@@ -88,63 +59,74 @@ export const Projects = () => {
               <h1 className='headingBlue'>CHICAGO, IL</h1>
               <p>Code Your Chances works with many schools and after school programs in the Chicagoland area. Some of the many great organizations we have partnered with include the Boys and Girls Clubs of Chicago, TechGirlz, CompileHer, Christopher House and Lester School. </p>
             </div>
-          
-            <div className="slideshow">
-              <div
-                className="slideshowSlider"
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-              >
-                {chicago.map((backgroundColor, index) => (
-                  <div
-                    className="slide"
-                    key={index}
-                    style={{ backgroundColor }}
-                  ><img src={process.env.PUBLIC_URL + chicago[index]}></img></div>
-                ))}
-              </div>
-
-              <div className="slideshowDots">
-                {chicago.map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`slideshowDot${index === idx ? " active" : ""}`}
-                    onClick={() => {
-                      setIndex(idx);
-                    }}
-                  ></div>
-                ))}
-              </div>
+            <div>
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={process.env.PUBLIC_URL+"/images/chicagoWorkshop/chicago1.jpg"}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/chicagoWorkshop/chicago2.jpg"}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/chicagoWorkshop/chicago3.jpg"}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/chicagoWorkshop/chicago4.jpg"}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              </Carousel>
             </div>
           </div>
 
 
           <div className='projectItem' data-AOS="fade-up">
 
-            <div className="slideshow">
-              <div
-                className="slideshowSlider"
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-              >
-                {uk.map((backgroundColor, index) => (
-                  <div
-                    className="slide"
-                    key={index}
-                    style={{ backgroundColor }}
-                  ><img src={process.env.PUBLIC_URL + uk[index]}></img></div>
-                ))}
-              </div>
-
-              <div className="slideshowDots">
-                {uk.map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`slideshowDot${index === idx ? " active" : ""}`}
-                    onClick={() => {
-                      setIndex(idx);
-                    }}
-                  ></div>
-                ))}
-              </div>
+          <div>
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={process.env.PUBLIC_URL+"/images/ukWorkshop/uk1.jpg"}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/ukWorkshop/uk2.jpg"}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/ukWorkshop/uk3.jpg"}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/ukWorkshop/uk4.jpg"}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              </Carousel>
             </div>
 
             <div className='projectDetails2 projectDetails'>
@@ -160,34 +142,38 @@ export const Projects = () => {
               <p>Code Your Chances has a dedicated CYC India team to design and teach workshops to our students based in India. Previous partnerships in India include Educate to Empower, Seed Academy, Cornerstone International College, Teach for India, Associate of British Scholars and the British Council.</p>
             </div>
 
-            <div className="slideshow">
-              <div
-                className="slideshowSlider"
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-              >
-                {india.map((backgroundColor, index) => (
-                  <div
-                    className="slide"
-                    key={index}
-                    style={{ backgroundColor }}
-                  ><img src={process.env.PUBLIC_URL + india[index]}></img></div>
-                ))}
-              </div>
-
-              <div className="slideshowDots">
-                {india.map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`slideshowDot${index === idx ? " active" : ""}`}
-                    onClick={() => {
-                      setIndex(idx);
-                    }}
-                  ></div>
-                ))}
-              </div>
+            <div>
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={process.env.PUBLIC_URL+"/images/indiaWorkshop/india1.jpeg"}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/indiaWorkshop/india2.jpeg"}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/indiaWorkshop/india3.jpeg"}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={process.env.PUBLIC_URL+"/images/indiaWorkshop/india4.jpeg"}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              </Carousel>
             </div>
-
-
           </div>
 
         </div>
