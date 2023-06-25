@@ -57,7 +57,7 @@ export const Projects = () => {
           <div className='projectItem' data-AOS="fade-up">
             <div className='projectDetails'>
               <h1 className='headingBlue'>CHICAGO, IL</h1>
-              <p>Code Your Chances works with many schools and after school programs in the Chicagoland area. Some of the many great organizations we have partnered with include the Boys and Girls Clubs of Chicago, TechGirlz, CompileHer, Christopher House and Lester School. </p>
+              <p>Code Your Chances works with many schools, after school programs, and summer camps in the Chicagoland area. Some of the many great organizations we have partnered with include the Boys and Girls Clubs of Chicago, TechGirlz, CompileHer, Christopher House and Lester School. </p>
             </div>
             <div>
               <Carousel>
