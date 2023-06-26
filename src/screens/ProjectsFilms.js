@@ -14,7 +14,7 @@ export const ProjectsFilms = () => {
         </div>
 
         <div className='mainSection'>
-          
+          <p>Code Your Chances recently partnered with Dell to offer free workshops at the Oscar-qualifying Chicago Children’s International Film Festival. Students gained valuable hands-on experience with the Unreal Engine, motion capture and virtual cameras!</p>
 
         </div>
     </div>
