@@ -6,6 +6,19 @@
     color: white;
 }
 
+.applyPosters{
+    display: flex;
+}
+
+.applyPosters img{
+    width: 100%;
+}
+
+.applyPosters div{
+    padding: 2vh;
+    width: 50%;
+}
+
 @media screen and (max-width: 991px) {
     .mainApply{
     height: 20vh;
