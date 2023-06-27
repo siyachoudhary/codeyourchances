@@ -9,7 +9,7 @@ export const Apply = () => {
         
         <div className='mainApply'>
 
-            <h1 className='headingAbout'>JOIN THE CYC TEAM</h1>
+            <h1 className='headingAbout'>JOIN US!</h1>
             
         </div>
 
