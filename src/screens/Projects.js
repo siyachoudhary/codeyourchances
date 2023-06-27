@@ -31,7 +31,7 @@ export const Projects = () => {
             <div>
               <h1 className='headingBlue'>NBC</h1>
               <video width="100%" height="100%"controls>
-                <source src={process.env.PUBLIC_URL+"/videos/NBC.mp4"} type="video/mp4" />
+                <source src={process.env.PUBLIC_URL+"/videos/nbc.mp4"} type="video/mp4" />
               </video>
             </div>
 

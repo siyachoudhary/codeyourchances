@@ -7,7 +7,11 @@ export const Apply = () => {
     return (
       <div className="containerApply">
         
-        <h1>APPLY TODAY</h1>
+        <div className='mainApply'>
+
+            <h1 className='headingAbout'>JOIN THE CYC TEAM</h1>
+            
+        </div>
 
       </div>
     );
