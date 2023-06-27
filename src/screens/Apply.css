@@ -17,13 +17,23 @@
 .applyPosters div{
     padding: 2vh;
     width: 50%;
+    filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.2));
 }
 
 @media screen and (max-width: 991px) {
     .mainApply{
-    height: 20vh;
-    padding-top: 13vh;
-    padding-bottom:10vh;
-    color: white;
+        height: 20vh;
+        padding-top: 13vh;
+        padding-bottom:10vh;
+        color: white;
+    }
+
+    .applyPosters{
+        display: inline;
+    }
+
+    .applyPosters div{
+        padding: 1vh;
+        width: 100%;
     }
 }  
