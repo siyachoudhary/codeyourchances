@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/codeyourchances/static/css/main.d167dca6.css",
-    "main.js": "/codeyourchances/static/js/main.ce9a8f38.js",
+    "main.css": "/codeyourchances/static/css/main.b309980d.css",
+    "main.js": "/codeyourchances/static/js/main.93b3ccbf.js",
     "static/js/787.b136fc9e.chunk.js": "/codeyourchances/static/js/787.b136fc9e.chunk.js",
     "static/media/cover1.png": "/codeyourchances/static/media/cover1.d4cb5ec4d34d3cf0e062.png",
     "static/media/cover2.jpeg": "/codeyourchances/static/media/cover2.0f555ed3185b175a996b.jpeg",
     "static/media/logo.svg": "/codeyourchances/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/codeyourchances/index.html",
-    "main.d167dca6.css.map": "/codeyourchances/static/css/main.d167dca6.css.map",
-    "main.ce9a8f38.js.map": "/codeyourchances/static/js/main.ce9a8f38.js.map",
+    "main.b309980d.css.map": "/codeyourchances/static/css/main.b309980d.css.map",
+    "main.93b3ccbf.js.map": "/codeyourchances/static/js/main.93b3ccbf.js.map",
     "787.b136fc9e.chunk.js.map": "/codeyourchances/static/js/787.b136fc9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d167dca6.css",
-    "static/js/main.ce9a8f38.js"
+    "static/css/main.b309980d.css",
+    "static/js/main.93b3ccbf.js"
   ]
 }
