@@ -29,7 +29,7 @@ export const Apply = () => {
 
             <br></br>
             <div className='button-53'><a href="https://docs.google.com/forms/d/e/1FAIpQLSdnEp8Hu1wNlYhC_a7YpbnXhV1o_yuy47R_bnJ-f89tX6JphQ/viewform" target='blank' className='scheduleBtnTxt'>APPLY NOW</a></div>
-            <p>Please contact <a href="mailto: info@codeyourchances.com" target='blank' style={{color: "black"}}>info@codeyourchances.com</a> with any questions.</p>
+            <p>Please contact <a href="mailto: info@codeyourchances.com" target='blank' style={{color: "black"}}>info@codeyourchances.com</a> with all questions.</p>
           </div>
         </div>
 
