@@ -28,21 +28,21 @@ export const Projects = () => {
 
           <div className='allVideos'>
 
-            <div>
+            <div data-AOS="fade-up">
               <h1 className='headingBlue'>NBC</h1>
               <video width="100%" height="100%"controls>
                 <source src={process.env.PUBLIC_URL+"/videos/nbc.mp4"} type="video/mp4" />
               </video>
             </div>
 
-            <div>
+            <div data-AOS="fade-up">
               <h1 className='headingBlue'>CBS</h1>
               <video width="100%" height="100%" controls>
                 <source src={process.env.PUBLIC_URL+"/videos/CBS.mp4"} type="video/mp4" />
               </video>
             </div>
 
-            <div>
+            <div data-AOS="fade-up">
               <h1 className='headingBlue'>FOX</h1>
               <video width="100%" height="100%" controls>
                 <source src={process.env.PUBLIC_URL+"/videos/fox.mp4"} type="video/mp4" />
